@@ -43,7 +43,7 @@ fun init(otw: SUIHUB_COFFEE, ctx: &mut TxContext) {
     transfer::transfer(admin_cap, ctx.sender())
 }
 
-fun create_coffee_machine(
+public fun create_coffee_machine(
     _: &mut AdminCap,
     location: String,
     coffee_price: u64,
